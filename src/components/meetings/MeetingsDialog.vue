@@ -38,8 +38,7 @@
           name="finish_meeting"
           showTime
           hourFormat="12"
-          :minDate="item.start_meeting"
-          :maxDate="nowPlusHours"
+          :minDate="now"
           class="shadow-sm focus:ring-indigo-700 focus:border-indigo-700 w-full sm:text-sm border-slate-300 rounded-md"
         />
       </div>
@@ -107,7 +106,6 @@ const itemComputed = computed(() => {
     finish_meeting: formaterDateSQL(item.value.finish_meeting),
   };
 });
-const nowPlusHours = computed(() => {return new Date(item.value.start_meeting.getTime() + 2 * 60 * 60 * 1000)});
 
 const getData = async () => {
   try {
