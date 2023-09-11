@@ -1,0 +1,12 @@
+.p-dialog .p-dialog-header {
+    background: #64748B  !important; /* Primary 500 */
+    color: white !important;
+}
+
+.p-dialog .p-dialog-header .p-dialog-header-icon{
+    color: white !important;
+}
+
+.p-dialog .p-dialog-footer{
+    background-color: #64748B !important;
+}

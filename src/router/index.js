@@ -10,8 +10,13 @@ const router = createRouter({
         },
         {
             path: '/meeting',
-            name: 'meetin',
+            name: 'meeting',
             component: () => import('../views/MeetingView.vue')
+        },
+        {
+            path: '/meetings/:id',
+            name: 'meetings',
+            component: () => import('../views/MeetingsView.vue')
         },
         {
             path: '/:pathMatch(.*)*',
